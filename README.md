@@ -466,3 +466,30 @@ TUTOR understood this in 1969. PLATO's students learned from each other's wrong 
 *Trial Count: 14 formal, 33 informal*
 *Token Savings: 3.7M*
 *Failure Rate Improvement: 6.7x*
+
+---
+
+## FLUX v3.0 Integration
+
+This module implements a **personality layer** on the [FLUX v3.0 Agent-Native VM](https://github.com/SuperInstance/flux-runtime).
+
+- **ISA:** Register-based bytecode (16-64 registers, 184 opcodes)
+- **ABI:** R0-R3 volatile args, R4-R7 returns, R8-R13 callee-saved, R14=RP (Resource Pointer), R15=PM (Permission Mask)
+- **Security:** Capability-based access control (16 capability classes in PM)
+- **Serialization:** Endian-independent SNAPSHOT/RESTORE for cloud-to-edge migration
+- **Dynamic Linking:** `jit_link()` generates minimal bytecode per agent state
+
+### Related Fleet Modules
+
+| Module | Purpose | Repo |
+|--------|---------|------|
+| **cocapn-tutor** | TUTOR personality — `@unit` compiles to bytecode | [SuperInstance/cocapn-tutor](https://github.com/SuperInstance/cocapn-tutor) |
+| **cocapn-shells** | Agent shells — register files + capability masks | [SuperInstance/cocapn-shells](https://github.com/SuperInstance/cocapn-shells) |
+| **cocapn-lessons** | Trial-based learning — JIT hot paths | [SuperInstance/cocapn-lessons](https://github.com/SuperInstance/cocapn-lessons) |
+| **cocapn-curriculum** | Competency DAG — compiled modules | [SuperInstance/cocapn-curriculum](https://github.com/SuperInstance/cocapn-curriculum) |
+
+### Architecture Specs
+
+- [FLUX Vector Table v3.0](https://github.com/SuperInstance/oracle1-workspace/tree/main/data/bottles/ccc/CCC-FLUX-VECTOR-TABLE-v3.0-SPEC-2026-05-04.md)
+- [FLUX Global Jump Table Memory Map](https://github.com/SuperInstance/oracle1-workspace/tree/main/data/bottles/ccc/CCC-FLUX-GJT-MEMORY-MAP-v3.0-2026-05-04.md)
+

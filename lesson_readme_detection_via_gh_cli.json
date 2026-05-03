@@ -15,8 +15,7 @@
         "readme",
         "cli"
       ],
-      "bytecode_hash": "a1b2c3d4",
-      "at": "2026-05-03T20:29:46.322996+00:00"
+      "at": "2026-05-03T21:26:36.152439+00:00"
     },
     {
       "task": "README detection via gh CLI",
@@ -31,8 +30,7 @@
         "readme",
         "api"
       ],
-      "bytecode_hash": "e5f6g7h8",
-      "at": "2026-05-03T20:29:46.323008+00:00"
+      "at": "2026-05-03T21:26:36.152451+00:00"
     },
     {
       "task": "README detection via gh CLI",
@@ -47,8 +45,7 @@
         "readme",
         "api"
       ],
-      "bytecode_hash": "e5f6g7h8",
-      "at": "2026-05-03T20:29:46.323016+00:00"
+      "at": "2026-05-03T21:26:36.152459+00:00"
     },
     {
       "task": "README detection via gh CLI",
@@ -63,12 +60,8 @@
         "readme",
         "cli"
       ],
-      "bytecode_hash": "a1b2c3d4",
-      "at": "2026-05-03T20:29:46.323024+00:00"
+      "at": "2026-05-03T21:26:36.152466+00:00"
     }
   ],
-  "bytecode_segments": {},
-  "hot_path": null,
-  "cold_path": null,
-  "created_at": "2026-05-03T20:29:46.322961+00:00"
+  "created_at": "2026-05-03T21:26:36.152391+00:00"
 }

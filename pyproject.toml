@@ -1,0 +1,24 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "cocapn-lessons"
+version = "3.0.0"
+description = "FLUX v3.0 Trial-based Learning — JIT hot paths with branch prediction"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+keywords = ["flux", "vm", "agent", "learning", "jit"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+]
+
+[project.scripts]
+cocapn-lessons = "cocapn_lessons_flux:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["cocapn_lessons_flux.py"]
